@@ -10,7 +10,7 @@
     "openai": "^3.1.0"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "build": "npm run start",
     "dev": "nodemon app.js"
   },
