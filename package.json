@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "build": "npm run start",
+    "build": "npm install && npm run build-css && mkdir -p public && cp -R src/* public/ && react-scripts build",
     "dev": "nodemon app.js"
   },
   "keywords": [
