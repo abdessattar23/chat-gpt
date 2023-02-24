@@ -12,6 +12,7 @@
   "scripts": {
     "start": "node src/app.js",
     "build": "npm install && npm run build-css && mkdir -p public && cp -R src/* public/ && react-scripts build",
+    "build-css": "node-sass-chokidar src/ -o src/ --recursive",
     "dev": "nodemon app.js"
   },
   "keywords": [
